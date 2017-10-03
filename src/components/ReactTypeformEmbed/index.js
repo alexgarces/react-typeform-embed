@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import * as typeformEmbed from '@typeform/embed';
 import './ReactTypeformEmbed.css';
@@ -13,10 +12,17 @@ class ReactTypeformEmbed extends Component {
   }
 
   componentDidMount() {
+		const { url, hideHeaders, hideFooter, opacity, buttonText } = this.props;
     const elm = this.refs.typeform;
-    console.log('typeformEmbed',typeformEmbed);
+		const options = {
+			hideHeaders,
+			hideFooter,
+			opacity,
+			buttonText
+		}
 
-    typeformEmbed.makeWidget(elm, 'https://developerplatform.typeform.com/to/Xc7NMh');
+		// Load Typeform embed widget
+    typeformEmbed.makeWidget(elm, url, options);
   }
 
   render() {
@@ -29,7 +35,21 @@ class ReactTypeformEmbed extends Component {
 }
 
 ReactTypeformEmbed.propTypes = {
-  // name: PropTypes.string
+  url: PropTypes.string.isRequired,
+	hideHeaders: PropTypes.bool,
+	hideFooter: PropTypes.bool,
+	opacity: PropTypes.number,
+	buttonText: PropTypes.string
+};
+
+// Default values taken from official Typeform docs
+// https://developer.typeform.com/embed/modes/
+ReactTypeformEmbed.defaultProps = {
+	url: '',
+	hideHeaders: false,
+	hideFooter: false,
+	opacity: 100,
+	buttonText: 'Start'
 };
 
 export default ReactTypeformEmbed;
