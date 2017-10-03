@@ -12,7 +12,7 @@ class ReactTypeformEmbed extends Component {
   }
 
   componentDidMount() {
-		const { url, hideHeaders, hideFooter, opacity, buttonText } = this.props;
+		const { popup, url, hideHeaders, hideFooter, opacity, buttonText } = this.props;
     const elm = this.refs.typeform;
 		const options = {
 			hideHeaders,
@@ -21,8 +21,16 @@ class ReactTypeformEmbed extends Component {
 			buttonText
 		}
 
-		// Load Typeform embed widget
-    typeformEmbed.makeWidget(elm, url, options);
+		// Popup Mode
+		if ( popup ) {
+			// Load Typeform embed popup
+			typeformEmbed.makePopup(url, options);
+		// Default: Widget Mode
+		} else {
+			// Load Typeform embed widget
+			typeformEmbed.makeWidget(elm, url, options);
+		}
+
   }
 
   render() {
@@ -31,6 +39,7 @@ class ReactTypeformEmbed extends Component {
 }
 
 ReactTypeformEmbed.propTypes = {
+	popup: PropTypes.bool,
   url: PropTypes.string.isRequired,
 	hideHeaders: PropTypes.bool,
 	hideFooter: PropTypes.bool,
@@ -42,6 +51,7 @@ ReactTypeformEmbed.propTypes = {
 // Most default values taken from official Typeform docs
 // https://developer.typeform.com/embed/modes/
 ReactTypeformEmbed.defaultProps = {
+	popup: false,
 	url: '',
 	hideHeaders: false,
 	hideFooter: false,
