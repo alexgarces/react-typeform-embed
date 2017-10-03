@@ -26,11 +26,7 @@ class ReactTypeformEmbed extends Component {
   }
 
   render() {
-    return (
-      <div className="ReactTypeformEmbed">
-        <div ref="typeform" style={{height: 1000}} />
-      </div>
-    );
+    return <div className="ReactTypeformEmbed" ref="typeform" style={this.props.style}/>;
   }
 }
 
@@ -39,17 +35,19 @@ ReactTypeformEmbed.propTypes = {
 	hideHeaders: PropTypes.bool,
 	hideFooter: PropTypes.bool,
 	opacity: PropTypes.number,
-	buttonText: PropTypes.string
+	buttonText: PropTypes.string,
+	style: PropTypes.object
 };
 
-// Default values taken from official Typeform docs
+// Most default values taken from official Typeform docs
 // https://developer.typeform.com/embed/modes/
 ReactTypeformEmbed.defaultProps = {
 	url: '',
 	hideHeaders: false,
 	hideFooter: false,
 	opacity: 100,
-	buttonText: 'Start'
+	buttonText: 'Start',
+	style: {}
 };
 
 export default ReactTypeformEmbed;

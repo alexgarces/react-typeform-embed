@@ -5,11 +5,10 @@ const Example = (props) => {
   return (
     <div className="Example">
       <ReactTypeformEmbed
-				url={'https://developerplatform.typeform.com/to/Xc7NMh'}
+				url={'https://demo.typeform.com/to/njdbt5'}
 				hideHeaders={true}
 				hideFooter={true}
-				opacity={50}
-				buttonText="YAS QUEEN"/>
+				buttonText="Go!"/>
     </div>
   );
 }

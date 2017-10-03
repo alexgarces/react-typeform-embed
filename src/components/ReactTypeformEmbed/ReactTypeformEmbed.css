@@ -1,19 +1,17 @@
 .ReactTypeformEmbed {
-  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
-.ReactTypeformEmbed-logo {
-  animation: ReactTypeformEmbed-logo-spin infinite 20s linear;
-  height: 80px;
+.ReactTypeformEmbed > div {
+  width: 100%;
+  height: 100%;
 }
 
-.ReactTypeformEmbed-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.ReactTypeformEmbed-intro {
+.ReactTypeformEmbed__error {
   font-size: large;
 }
