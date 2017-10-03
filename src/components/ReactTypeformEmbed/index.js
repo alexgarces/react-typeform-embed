@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 import * as typeformEmbed from '@typeform/embed';
-import moment from 'moment';
-import logo from './logo.svg';
-import './App.css';
+import './ReactTypeformEmbed.css';
 
-class App extends Component {
+class ReactTypeformEmbed extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -21,20 +20,16 @@ class App extends Component {
   }
 
   render() {
-    console.log('moment',moment);
-
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <div ref="typeform" style={{height: 1000}}>
-
-        </div>
+      <div className="ReactTypeformEmbed">
+        <div ref="typeform" style={{height: 1000}} />
       </div>
     );
   }
 }
 
-export default App;
+ReactTypeformEmbed.propTypes = {
+  // name: PropTypes.string
+};
+
+export default ReactTypeformEmbed;
