@@ -25,6 +25,7 @@ class ReactTypeformEmbed extends Component {
 		if ( popup ) {
 			// Load Typeform embed popup
 			typeformEmbed.makePopup(url, options);
+      
 		// Default: Widget Mode
 		} else {
 			// Load Typeform embed widget
@@ -39,25 +40,34 @@ class ReactTypeformEmbed extends Component {
 }
 
 ReactTypeformEmbed.propTypes = {
-	popup: PropTypes.bool,
+  style: PropTypes.object,
   url: PropTypes.string.isRequired,
 	hideHeaders: PropTypes.bool,
 	hideFooter: PropTypes.bool,
 	opacity: PropTypes.number,
 	buttonText: PropTypes.string,
-	style: PropTypes.object
+  popup: PropTypes.bool,
+
+  // Only popup options
+  mode: PropTypes.string,
+  autoOpen: PropTypes.bool,
+  autoClose: PropTypes.number
 };
 
 // Most default values taken from official Typeform docs
 // https://developer.typeform.com/embed/modes/
 ReactTypeformEmbed.defaultProps = {
-	popup: false,
+  style: {},
 	url: '',
 	hideHeaders: false,
 	hideFooter: false,
 	opacity: 100,
 	buttonText: 'Start',
-	style: {}
+  popup: false,
+
+  // Only popup options
+  mode: "popup", // mode options: "popup", "drawer_left", "drawer_right"
+  autoOpen: false
 };
 
 export default ReactTypeformEmbed;
