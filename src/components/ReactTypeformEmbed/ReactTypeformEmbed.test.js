@@ -1,8 +1,25 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import { shallow, mount, render } from 'enzyme';
+import ReactTypeformEmbed from './index';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+// console.log(ReactTypeformEmbed);
+
+const url = 'https://demo.typeform.com/to/njdbt5';
+
+describe('<ReactTypeformEmbed />', () => {
+  it('should render without breaking', () => {
+    const wrapper = shallow(<ReactTypeformEmbed url={url} popup={true}/>);
+    expect(wrapper.length).toEqual(1);
+  });
+
+  it('should have the className ReactTypeformEmbed', () => {
+    const wrapper = shallow(<ReactTypeformEmbed url={url} popup={true}/>);
+    expect(wrapper.is('.ReactTypeformEmbed')).toEqual(true);
+  });
+
+  it('should have the correct url props', () => {
+    const wrapper = mount(<ReactTypeformEmbed url={url} />);
+    console.log(wrapper.props().url);
+    expect(wrapper.props().url).toEqual(url);
+  });
 });

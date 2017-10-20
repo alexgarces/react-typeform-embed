@@ -3,3 +3,25 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+h1, h2, a, a:hover {
+  color: #cb732b;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.Examples {
+  padding: 60px 0;
+}
+
+.Examples__widget-section,
+.Examples__popup-section {
+  display: block;
+  position: relative;
+}
+
+.Examples__widget-section {
+  height: 400px;
+}

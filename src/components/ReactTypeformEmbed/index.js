@@ -4,12 +4,6 @@ import * as typeformEmbed from '@typeform/embed';
 import './ReactTypeformEmbed.css';
 
 class ReactTypeformEmbed extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    };
-  }
 
   componentDidMount() {
 		const { url, hideHeaders, hideFooter, opacity, buttonText, popup, mode, autoOpen, autoClose } = this.props;
@@ -17,29 +11,31 @@ class ReactTypeformEmbed extends Component {
 			hideHeaders,
 			hideFooter,
 			opacity,
-			buttonText
+			buttonText,
+      opacity,
+      buttonText,
+      mode,
+      autoOpen,
+      autoClose
 		}
 
 		// Popup Mode
 		if ( popup ) {
-      const popupOptions = {...options, mode, autoOpen, autoClose};
 
 			// Load Typeform embed popup
-			typeformEmbed.makePopup(url, popupOptions);
+			this.typeform = typeformEmbed.makePopup(url, options);
 
 		// Widget Mode (default)
 		} else {
-      const widgetOptions = {...options, opacity, buttonText};
-      const elm = this.refs.typeform;
+      const elm = this.typeformElm;
 
 			// Load Typeform embed widget
-			typeformEmbed.makeWidget(elm, url, widgetOptions);
+			typeformEmbed.makeWidget(elm, url, options);
 		}
-
   }
 
   render() {
-    return <div className="ReactTypeformEmbed" ref="typeform" style={this.props.style}/>;
+    return <div className="ReactTypeformEmbed" ref={tf => this.typeformElm = tf} style={this.props.style}/>;
   }
 }
 
@@ -60,7 +56,7 @@ ReactTypeformEmbed.propTypes = {
   autoClose: PropTypes.number
 };
 
-// Most default values taken from official Typeform docs
+// Default values taken from official Typeform docs
 // https://developer.typeform.com/embed/modes/
 ReactTypeformEmbed.defaultProps = {
   style: {},
@@ -74,7 +70,7 @@ ReactTypeformEmbed.defaultProps = {
 	buttonText: 'Start',
 
   // Popup options
-  mode: "popup", // mode options: "popup", "drawer_left", "drawer_right"
+  mode: "popup", // options: "popup", "drawer_left", "drawer_right"
   autoOpen: false
 };
 
