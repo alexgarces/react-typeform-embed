@@ -12,8 +12,6 @@ class ReactTypeformEmbed extends Component {
 			hideFooter,
 			opacity,
 			buttonText,
-      opacity,
-      buttonText,
       mode,
       autoOpen,
       autoClose

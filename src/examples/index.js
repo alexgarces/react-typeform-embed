@@ -1,5 +1,4 @@
 import React from 'react';
-import { ReactTypeformEmbed } from '../components';
 
 import ExampleWidget from './ExampleWidget';
 import ExamplePopup from './ExamplePopup';
@@ -19,7 +18,7 @@ class Examples extends React.Component {
       <div className="Examples">
         <div className="container">
           <h1>React Typeform Embed</h1>
-          <p>A React wrapper for the <a href="https://developer.typeform.com/embed/" target="_blank">Typeform Embed SDK</a></p>
+          <p>A React wrapper for the <a href="https://developer.typeform.com/embed/" target="_blank" rel="noopener noreferrer">Typeform Embed SDK</a></p>
           <br/>
           <br/>
           <h2>Widget Mode Example</h2>
