@@ -20,7 +20,8 @@
   "dependencies": {
     "@typeform/embed": "^0.1.7",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "react-scripts": "1.0.13"
   },
   "homepage": "http://alexgarces.github.io/react-typeform-embed/",
   "scripts": {
@@ -36,7 +37,6 @@
   },
   "devDependencies": {
     "bootstrap": "4.0.0-beta.2",
-    "react-scripts": "1.0.13",
     "babel-cli": "^6.26.0",
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
