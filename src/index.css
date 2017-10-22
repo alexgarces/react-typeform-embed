@@ -10,6 +10,11 @@ h1, h2, a, a:hover {
 
 h1 {
   font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
 }
 
 .Examples {
