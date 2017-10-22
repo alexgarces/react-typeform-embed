@@ -4,12 +4,13 @@ A React wrapper for [Typeform Embed SDK](https://developer.typeform.com/embed/).
 
 ## Usage
 
-```
+```bash
 npm install react-typeform-embed
 # or
 yarn add react-typeform-embed
 ```
-```
+
+```js
 import React from 'react';
 import { ReactTypeformEmbed } from 'react-typeform-embed';
 
@@ -26,7 +27,7 @@ See the examples source for more options.
 
 See a [live demo](https://alexgarces.github.io/react-typeform-embed/), or run:
 
-```
+```bash
 git clone https://github.com/alexgarces/react-typeform-embed
 cd react-typeform-embed
 npm install # or yarn
