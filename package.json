@@ -1,6 +1,6 @@
 {
   "name": "react-typeform-embed",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "./lib/index.js",
   "engines": {
     "node": ">=4.0.0"
@@ -27,7 +27,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build:docs": "react-scripts build",
-    "build:lib": "npm run build:commonjs",
+    "build:css": "cpx \"./src/components/**/*.css\" ./lib",
+    "build:lib": "npm run build:commonjs && npm run build:css",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy:docs": "npm run build:docs",
