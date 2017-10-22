@@ -35,7 +35,7 @@ npm start
 open http://localhost:3000
 ```
 
-### Props
+## Props
 
 Most props are based on the official parameters from [Typeform Embed SDK](https://developer.typeform.com/embed/)
 
@@ -52,7 +52,7 @@ Prop | Description | Default
 `autoOpen` | `true` if the typeform should open automatically when the page loads. Otherwise, `false`.<br />*Popup mode option* | `false`
 `autoClose` | **PRO+ accounts only**. Time until the embedded typeform should automatically close after a respondent clicks the Submit button. Your typeform will automatically close after the time you specify, so respondents won’t have to manually close your typeform popup. In milliseconds.<br />*Popup mode option* | N/A
 
-### Popup Mode Instance Methods
+## Popup Mode Instance Methods
 
 Use `ref` to call instance methods. See [the source](https://github.com/alexgarces/react-typeform-embed/blob/master/src/examples/ExamplePopup.js) for an example of this.
 
