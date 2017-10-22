@@ -19,7 +19,7 @@ class Examples extends React.Component {
         <div className="container">
           <h1>React Typeform Embed</h1>
           <p>A React wrapper for <a href="https://github.com/alexgarces/react-typeform-embed" target="_blank" rel="noopener noreferrer">Typeform Embed SDK</a>.</p>
-          <p>Visit <a href="">Github</a> repository for more info.</p>
+          <p>Visit <a href="https://github.com/alexgarces/react-typeform-embed">Github</a> repository for more info.</p>
           <br/>
           <br/>
           <h2>Widget Mode Example</h2>
