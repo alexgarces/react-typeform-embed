@@ -1,6 +1,6 @@
 # React Typeform Embed
 
-A React wrapper for (Typeform Embed SDK)[https://developer.typeform.com/embed/].
+A React wrapper for [Typeform Embed SDK](https://developer.typeform.com/embed/).
 
 ## Usage
 
@@ -24,7 +24,7 @@ See the examples source for more options.
 
 ## Demo
 
-See a (live demo)[https://alexgarces.github.io/react-typeform-embed/], or run:
+See a [live demo](https://alexgarces.github.io/react-typeform-embed/), or run:
 
 ```
 git clone https://github.com/alexgarces/react-typeform-embed
@@ -36,7 +36,7 @@ open http://localhost:3000
 
 ### Props
 
-Most props are based on the official parameters from (Typeform Embed SDK)[https://developer.typeform.com/embed/]
+Most props are based on the official parameters from [Typeform Embed SDK](https://developer.typeform.com/embed/)
 
 Prop | Description | Default
 ---- | ----------- | -------
@@ -53,7 +53,7 @@ Prop | Description | Default
 
 ### Popup Mode Instance Methods
 
-Use `ref` to call instance methods on the player. See (the source)[https://github.com/alexgarces/react-typeform-embed/blob/master/src/examples/ExamplePopup.js] for an example of this.
+Use `ref` to call instance methods on the player. See [the source](https://github.com/alexgarces/react-typeform-embed/blob/master/src/examples/ExamplePopup.js) for an example of this.
 
 Method | Description
 ---- | -----------
