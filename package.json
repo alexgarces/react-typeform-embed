@@ -26,6 +26,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build:docs": "react-scripts build",
+    "build:lib": "npm run build:commonjs",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy:docs": "npm run build:docs",
