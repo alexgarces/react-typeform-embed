@@ -21,7 +21,7 @@ class App extends React.Component {
 }
 ```
 
-See the examples source for more options.
+See the source for more examples.
 
 ## Demo
 
@@ -41,9 +41,9 @@ Most props are based on the official parameters from [Typeform Embed SDK](https:
 
 Prop | Description | Default
 ---- | ----------- | -------
-`url` | The url of Typeform form to display | `""`
+`url` | The url of the Typeform form to display | `""`
 `style` | Additional styles for the component | `{}`
-`popup` | Display in popup mode.<br />By default the form is displayed in widget mode | `false`
+`popup` | `true` if you want to display the form in **popup** mode.<br />By default it is displayed in **widget** mode | `false`
 `hideHeaders` | `true` if you want to hide the **header** that displays for question groups and long questions that require scrolling. Otherwise, `false` | `false`
 `hideFooter` | `true` if you want to hide the **footer** that displays a progress bar and navigation buttons. Otherwise, `false`. | `false`
 `opacity` | Background opacity. Valid values include any integer between `0` (completely transparent) and `100` (completely opaque). Note that this isn't the same as the CSS opacity scale (0-1).<br />*Widget mode option* | `100`
@@ -54,7 +54,7 @@ Prop | Description | Default
 
 ### Popup Mode Instance Methods
 
-Use `ref` to call instance methods on the player. See [the source](https://github.com/alexgarces/react-typeform-embed/blob/master/src/examples/ExamplePopup.js) for an example of this.
+Use `ref` to call instance methods. See [the source](https://github.com/alexgarces/react-typeform-embed/blob/master/src/examples/ExamplePopup.js) for an example of this.
 
 Method | Description
 ---- | -----------
