@@ -7,11 +7,6 @@
   overflow: hidden;
 }
 
-.ReactTypeformEmbed > div {
-  width: 100%;
-  height: 100%;
-}
-
 .ReactTypeformEmbed__error {
   font-size: large;
 }
