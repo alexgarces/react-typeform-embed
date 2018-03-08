@@ -19,7 +19,6 @@ describe('<ReactTypeformEmbed />', () => {
 
   it('should have the correct url props', () => {
     const wrapper = mount(<ReactTypeformEmbed url={url} />);
-    console.log(wrapper.props().url);
     expect(wrapper.props().url).toEqual(url);
   });
 });
