@@ -13,6 +13,8 @@ yarn add react-typeform-embed
 ```js
 import React from 'react';
 import { ReactTypeformEmbed } from 'react-typeform-embed';
+/**optional**/
+import ‘react-typeform-embed/lib/ReactTypeformEmbed/ReactTypeformEmbed.css’;
 
 class App extends React.Component {
   render() {

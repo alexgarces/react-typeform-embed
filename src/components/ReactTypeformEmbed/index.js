@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import * as typeformEmbed from '@typeform/embed';
-import './ReactTypeformEmbed.css';
 
 class ReactTypeformEmbed extends Component {
 
