@@ -51,6 +51,7 @@ Prop | Description | Default
 `mode` | Identifies how the popup should behave. Valid values are `popup` (full-screen popup), `drawer_left` (popup slides in from the left), and `drawer_right` (popup slides in from the right).<br />*Popup mode option* | `"popup"`
 `autoOpen` | `true` if the typeform should open automatically when the page loads. Otherwise, `false`.<br />*Popup mode option* | `false`
 `autoClose` | **PRO+ accounts only**. Time until the embedded typeform should automatically close after a respondent clicks the Submit button. Your typeform will automatically close after the time you specify, so respondents won’t have to manually close your typeform popup. In milliseconds.<br />*Popup mode option* | N/A
+`onSubmit` | **PRO+ accounts only**. Callback event taht will execute immediately after a respondent successfully submits the typeform. <br /> | N/A
 
 ## Popup Mode Instance Methods
 
