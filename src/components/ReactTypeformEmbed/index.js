@@ -64,6 +64,7 @@ ReactTypeformEmbed.defaultProps = {
   popup: false,
 	hideHeaders: false,
 	hideFooter: false,
+  onSubmit: function() {},
 
   // Widget options
 	opacity: 100,
@@ -73,9 +74,7 @@ ReactTypeformEmbed.defaultProps = {
   mode: "popup", // options: "popup", "drawer_left", "drawer_right"
   autoOpen: false,
 
-  onSubmit: function() {
-    console.log('Typeform successfully submitted');
-  },
+
 };
 
 export default ReactTypeformEmbed;
