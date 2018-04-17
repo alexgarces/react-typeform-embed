@@ -20,7 +20,7 @@
     "typeform"
   ],
   "dependencies": {
-    "@typeform/embed": "^0.5.6",
+    "@typeform/embed": "^0.5.8",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-scripts": "1.0.13"
