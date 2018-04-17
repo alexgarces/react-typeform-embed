@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import * as typeformEmbed from '@typeform/embed';
-import './ReactTypeformEmbed.css';
+
+const styleDefault = {
+  position: 'absolute',
+  top: 0,
+  left: 0,
+  width: '100%',
+  height: '100%',
+  overflow: 'hidden'
+}
 
 class ReactTypeformEmbed extends Component {
 
@@ -34,7 +42,9 @@ class ReactTypeformEmbed extends Component {
   }
 
   render() {
-    return <div className="ReactTypeformEmbed" ref={tf => this.typeformElm = tf} style={this.props.style} />;
+    const style = Object.assign({}, styleDefault, this.props.style);
+
+    return <div className="ReactTypeformEmbed" ref={tf => this.typeformElm = tf} style={style} />;
   }
 }
 
