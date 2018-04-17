@@ -10,7 +10,9 @@
     "email": "info@alexgarces.com",
     "url": "https://alexgarces.com"
   },
-  "files": [ "lib" ],
+  "files": [
+    "lib"
+  ],
   "keywords": [
     "components",
     "react",
