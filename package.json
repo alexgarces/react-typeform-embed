@@ -1,6 +1,6 @@
 {
   "name": "react-typeform-embed",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "main": "./lib/index.js",
   "engines": {
     "node": ">=4.0.0"
