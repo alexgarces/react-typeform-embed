@@ -61,3 +61,7 @@ Method | Description
 ---- | -----------
 `typeform.open()` | Open the popup window
 `typeform.close()` | Close the popup window
+
+### License
+
+Code released under the [MIT license](LICENSE.txt).
