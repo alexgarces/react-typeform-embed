@@ -42,7 +42,10 @@ class ReactTypeformEmbed extends Component {
   }
 
   render() {
-    const style = Object.assign({}, styleDefault, this.props.style);
+    const styleBase = this.props.popup
+      ? { display: 'none' }
+      : {}
+    const style = Object.assign(styleBase, styleDefault, this.props.style);
 
     return <div className="ReactTypeformEmbed" ref={tf => this.typeformElm = tf} style={style} />;
   }
