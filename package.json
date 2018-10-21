@@ -39,7 +39,7 @@
     "deploy:docs": "gh-pages -d build",
     "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore test.js",
     "prepublish": "npm run build:lib",
-    "link": "standard **/*.js"
+    "lint": "standard --fix src/**/*.js"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
