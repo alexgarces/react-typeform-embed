@@ -20,10 +20,12 @@
     "typeform"
   ],
   "dependencies": {
-    "@typeform/embed": "^0.5.8",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "@typeform/embed": "^0.5.12",
     "react-scripts": "1.0.13"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   },
   "homepage": "http://alexgarces.github.io/react-typeform-embed/",
   "scripts": {
@@ -36,23 +38,25 @@
     "predeploy:docs": "npm run build:docs",
     "deploy:docs": "gh-pages -d build",
     "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore test.js",
-    "prepublish": "npm run build:lib"
+    "prepublish": "npm run build:lib",
+    "link": "standard **/*.js"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "bootstrap": "4.0.0-beta.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
     "cpx": "^1.5.0",
     "cross-env": "^5.1.0",
     "enzyme": "^3.1.0",
-    "enzyme-adapter-react-15": "^1.0.2",
     "enzyme-adapter-react-16": "^1.0.2",
     "enzyme-to-json": "^3.1.4",
     "gh-pages": "^1.0.0",
     "jest": "^21.2.1",
     "react-test-renderer": "^16.0.0",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "standard": "^12.0.1"
   },
   "babel": {
     "presets": [
