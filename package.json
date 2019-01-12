@@ -13,6 +13,7 @@
   "files": [
     "lib"
   ],
+  "license": "MIT",
   "keywords": [
     "components",
     "react",
