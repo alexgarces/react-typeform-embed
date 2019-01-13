@@ -16,7 +16,7 @@ import { ReactTypeformEmbed } from 'react-typeform-embed';
 
 class App extends React.Component {
   render() {
-    return <ReactTypeformEmbed url={'https://demo.typeform.com/to/njdbt5'}/>
+    return <ReactTypeformEmbed url="https://demo.typeform.com/to/njdbt5" />;
   }
 }
 ```
