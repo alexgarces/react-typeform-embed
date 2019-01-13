@@ -19,7 +19,7 @@ class Examples extends React.Component {
         <div className="container">
           <h1>React Typeform Embed</h1>
           <p>
-            A React wrapper for{' '}
+            {`A React wrapper for `}
             <a
               href="https://developer.typeform.com/embed/"
               target="_blank"
@@ -45,12 +45,9 @@ class Examples extends React.Component {
           <br />
           <h2>Popup Mode Example</h2>
           <br />
-          Example
           <div className="Examples__popup-section">
             <ExamplePopup />
-            Example
           </div>
-          example
         </div>
       </div>
     );

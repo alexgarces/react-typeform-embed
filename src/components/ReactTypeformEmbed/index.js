@@ -54,7 +54,15 @@ class ReactTypeformEmbed extends Component {
   render() {
     const style = Object.assign({}, styleDefault, this.props.style);
 
-    return <div className="ReactTypeformEmbed" ref={tf => (this.typeformElm = tf)} style={style} />;
+    return (
+      <div
+        className="ReactTypeformEmbed"
+        ref={tf => {
+          this.typeformElm = tf;
+        }}
+        style={style}
+      />
+    );
   }
 }
 
@@ -80,7 +88,6 @@ ReactTypeformEmbed.propTypes = {
 // https://developer.typeform.com/embed/modes/
 ReactTypeformEmbed.defaultProps = {
   style: {},
-  url: '',
   popup: false,
   hideHeaders: false,
   hideFooter: false,
@@ -92,7 +99,8 @@ ReactTypeformEmbed.defaultProps = {
 
   // Popup options
   mode: 'popup', // options: "popup", "drawer_left", "drawer_right"
-  autoOpen: false
+  autoOpen: false,
+  autoClose: 5
 };
 
 export default ReactTypeformEmbed;

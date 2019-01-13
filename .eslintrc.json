@@ -1,0 +1,38 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "parser": "babel-eslint",
+  "plugins": ["prettier", "jest"],
+  "globals": {
+    "window": true,
+    "document": true
+  },
+  "env": {
+    "jest/globals": true
+  },
+  "rules": {
+    "no-multi-assign": 0,
+    "prettier/prettier": ["error"],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react/forbid-prop-types": false,
+    "import/prefer-default-export": false,
+    "jsx-a11y/label-has-for": false,
+    "react/prop-types": false,
+    "react/jsx-one-expression-per-line": false,
+    "arrow-body-style": 0,
+    "react/button-has-type": false,
+    "react/destructuring-assignment": false,
+    "consistent-return": 1,
+    "jsx-a11y/label-has-associated-control": false,
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ]
+  }
+}
