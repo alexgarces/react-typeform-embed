@@ -9,12 +9,23 @@ const styleDefault = {
   width: '100%',
   height: '100%',
   overflow: 'hidden'
-}
+};
 
 class ReactTypeformEmbed extends Component {
-
   componentDidMount() {
-    const { url, hideHeaders, hideFooter, opacity, buttonText, popup, mode, autoOpen, autoClose, onSubmit } = this.props;
+    const {
+      url,
+      hideHeaders,
+      hideFooter,
+      opacity,
+      buttonText,
+      popup,
+      mode,
+      autoOpen,
+      autoClose,
+      onSubmit
+    } = this.props;
+
     const options = {
       hideHeaders,
       hideFooter,
@@ -23,12 +34,11 @@ class ReactTypeformEmbed extends Component {
       mode,
       autoOpen,
       autoClose,
-      onSubmit,
-    }
+      onSubmit
+    };
 
     // Popup Mode
     if (popup) {
-
       // Load Typeform embed popup
       this.typeform = typeformEmbed.makePopup(url, options);
 
@@ -44,7 +54,7 @@ class ReactTypeformEmbed extends Component {
   render() {
     const style = Object.assign({}, styleDefault, this.props.style);
 
-    return <div className="ReactTypeformEmbed" ref={tf => this.typeformElm = tf} style={style} />;
+    return <div className="ReactTypeformEmbed" ref={tf => (this.typeformElm = tf)} style={style} />;
   }
 }
 
@@ -63,7 +73,7 @@ ReactTypeformEmbed.propTypes = {
   mode: PropTypes.string,
   autoOpen: PropTypes.bool,
   autoClose: PropTypes.number,
-  onSubmit: PropTypes.func,
+  onSubmit: PropTypes.func
 };
 
 // Default values taken from official Typeform docs
@@ -74,17 +84,15 @@ ReactTypeformEmbed.defaultProps = {
   popup: false,
   hideHeaders: false,
   hideFooter: false,
-  onSubmit: () => { },
+  onSubmit: () => {},
 
   // Widget options
   opacity: 100,
   buttonText: 'Start',
 
   // Popup options
-  mode: "popup", // options: "popup", "drawer_left", "drawer_right"
-  autoOpen: false,
-
-
+  mode: 'popup', // options: "popup", "drawer_left", "drawer_right"
+  autoOpen: false
 };
 
 export default ReactTypeformEmbed;

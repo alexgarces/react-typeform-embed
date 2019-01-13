@@ -16,7 +16,10 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, a, a:hover {
+h1,
+h2,
+a,
+a:hover {
   font-weight: 200;
 }
 

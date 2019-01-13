@@ -21,10 +21,12 @@ class ExamplePopup extends React.Component {
           hideHeaders={true}
           hideFooter={true}
           buttonText="Go!"
-          style={{top: 100}}
-          ref={(tf => this.typeformEmbed = tf) }/>
-
-        <button className="btn" onClick={this.openForm} style={{cursor: 'pointer'}}>Click to open the popup!</button>
+          style={{ top: 100 }}
+          ref={tf => (this.typeformEmbed = tf)}
+        />
+        <button className="btn" onClick={this.openForm} style={{ cursor: 'pointer' }}>
+          Click to open the popup!
+        </button>
       </div>
     );
   }
