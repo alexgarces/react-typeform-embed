@@ -1,6 +1,13 @@
 {
-  "main.css": "static/css/main.49ec6aaf.css",
-  "main.css.map": "static/css/main.49ec6aaf.css.map",
-  "main.js": "static/js/main.7a503d6b.js",
-  "main.js.map": "static/js/main.7a503d6b.js.map"
+  "main.css": "/react-typeform-embed/static/css/main.05c7ed5c.chunk.css",
+  "main.js": "/react-typeform-embed/static/js/main.d4cc2fde.chunk.js",
+  "main.js.map": "/react-typeform-embed/static/js/main.d4cc2fde.chunk.js.map",
+  "static/js/1.a6e988fb.chunk.js": "/react-typeform-embed/static/js/1.a6e988fb.chunk.js",
+  "static/js/1.a6e988fb.chunk.js.map": "/react-typeform-embed/static/js/1.a6e988fb.chunk.js.map",
+  "runtime~main.js": "/react-typeform-embed/static/js/runtime~main.92b82799.js",
+  "runtime~main.js.map": "/react-typeform-embed/static/js/runtime~main.92b82799.js.map",
+  "static/css/main.05c7ed5c.chunk.css.map": "/react-typeform-embed/static/css/main.05c7ed5c.chunk.css.map",
+  "index.html": "/react-typeform-embed/index.html",
+  "precache-manifest.2ce5b829bee5a3237bb6eb6d02700d6a.js": "/react-typeform-embed/precache-manifest.2ce5b829bee5a3237bb6eb6d02700d6a.js",
+  "service-worker.js": "/react-typeform-embed/service-worker.js"
 }
