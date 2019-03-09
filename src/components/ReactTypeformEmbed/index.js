@@ -37,6 +37,10 @@ class ReactTypeformEmbed extends Component {
       onSubmit
     };
 
+    if (url === '') {
+      throw new TypeError("Empty string passed into url parameter.")
+    }
+
     // Popup Mode
     if (popup) {
       // Load Typeform embed popup
