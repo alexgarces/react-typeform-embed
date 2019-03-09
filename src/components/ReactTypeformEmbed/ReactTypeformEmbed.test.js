@@ -19,4 +19,8 @@ describe('<ReactTypeformEmbed />', () => {
     const wrapper = mount(<ReactTypeformEmbed url={url} />);
     expect(wrapper.props().url).toEqual(url);
   });
+
+  it('should not use a blank url without throwing a clear error', () => {
+    expect(() => shallow(<ReactTypeformEmbed url={""} />)).toThrowError();
+  })
 });
