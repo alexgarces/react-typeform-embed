@@ -6,8 +6,6 @@ A React wrapper for [Typeform Embed SDK](https://developer.typeform.com/embed/).
 
 ```bash
 npm install react-typeform-embed
-# or
-yarn add react-typeform-embed
 ```
 
 ```js
@@ -30,7 +28,7 @@ See a [live demo](https://alexgarces.github.io/react-typeform-embed/), or run:
 ```bash
 git clone https://github.com/alexgarces/react-typeform-embed
 cd react-typeform-embed
-npm install # or yarn
+npm install
 npm start
 open http://localhost:3000
 ```
