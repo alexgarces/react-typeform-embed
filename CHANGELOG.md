@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.2.1] - 2019-07-26
+
+### Added
+
+- Update @typeform/embed version
+- Update other dependencies: react, enzyme, eslint, etc.
+
 ## [0.2.0] - 2019-01-13
 
 ### Added
