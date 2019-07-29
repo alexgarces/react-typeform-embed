@@ -60,6 +60,10 @@ Method | Description
 `typeform.open()` | Open the popup window
 `typeform.close()` | Close the popup window
 
+## React Native version
+
+If you're looking for React Native version of the same thing, you can find it over [here](https://github.com/ubdi/react-native-typeform-embed).
+
 ### License
 
 Code released under the [MIT license](LICENSE.txt).
