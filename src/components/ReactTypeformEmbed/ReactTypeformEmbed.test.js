@@ -19,4 +19,9 @@ describe('<ReactTypeformEmbed />', () => {
     const wrapper = mount(<ReactTypeformEmbed url={url} />);
     expect(wrapper.props().url).toEqual(url);
   });
+
+  it('should hide root node if props.popup is true', () => {
+    const wrapper = shallow(<ReactTypeformEmbed url={url} popup={true}/>);
+    expect(wrapper.prop('style').display).toEqual('none');
+  });
 });
