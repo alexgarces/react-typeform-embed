@@ -18,15 +18,15 @@ There are [five different embed types](https://developer.typeform.com/embed/vani
 - Sidetab
 - Popover
 
-You need to add the **form id** as the **id** prop.
+You need to provide the **form id** as **id** prop.
 
 You can get the id from the public URL of your form:
 
-https://form.typeform.com/to/**form-id**
+`https://form.typeform.com/to/<form-id>`
 
 Or from the admin panel URL:
 
-https://admin.typeform.com/form/**form-id**
+`https://admin.typeform.com/form/<form-id>`
 
 You can also use any other option or callback from [the official SDK](https://developer.typeform.com/embed/) passing them as props. Find more info here:
 
@@ -35,7 +35,7 @@ You can also use any other option or callback from [the official SDK](https://de
 
 ### Widget
 
-With the **widget embed type** you can embed your Typeform in a DOM element, inline in page.
+With the **widget embed type** you can embed your form inline, in a DOM element.
 
 ```js
 import React from 'react';
@@ -50,7 +50,7 @@ const App = () => {
 
 ### Popup and Slider
 
-With the **popup and slider embed types** you can embed the form in a modal window. You need to pass as children the element/s that will open the popup when clicked.
+With the **popup and slider embed types** you can embed the form in a modal. You need to pass as children the element/s that will open the modal when clicked.
 
 ```js
 import React from 'react';
