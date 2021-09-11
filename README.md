@@ -28,7 +28,7 @@ Or from the admin panel URL:
 
 `https://admin.typeform.com/form/<form-id>`
 
-You can also use any other option or callback from [the official SDK](https://developer.typeform.com/embed/) passing them as props. Find more info here:
+You can also use any other option (except `container`) and callback from [the official SDK](https://developer.typeform.com/embed/) passing them as props. Find more info here:
 
 - [Available Options](https://developer.typeform.com/embed/configuration/#available-options)
 - [Callback Functions](https://developer.typeform.com/embed/callbacks/)
