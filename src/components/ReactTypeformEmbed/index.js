@@ -1,3 +1,3 @@
-import ReactTypeformEmbed from './ReactTypeformEmbed';
+import { Widget, Popup, Slider } from './components';
 
-export default ReactTypeformEmbed;
+export { Widget, Popup, Slider };

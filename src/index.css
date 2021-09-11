@@ -44,12 +44,11 @@ hr {
   border-top: 1px solid #262627;
 }
 
-.Examples {
+.examples {
   padding: 60px 0 80px;
 }
 
-.Examples__widget-section,
-.Examples__popup-section {
+.examples-section {
   display: block;
   position: relative;
 }
