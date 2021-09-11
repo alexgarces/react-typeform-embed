@@ -1,6 +1,12 @@
 import React from 'react';
 
-import { ExampleWidget, ExamplePopup, ExampleSlider } from './components';
+import {
+  ExampleWidget,
+  ExamplePopup,
+  ExampleSlider,
+  ExampleSidetab,
+  ExamplePopover,
+} from './components';
 
 const Examples = () => (
   <div className="examples">
@@ -19,26 +25,24 @@ const Examples = () => (
       </p>
       <br />
       <br />
+
+      <h2>Modal Examples</h2>
+      <br />
+      <div className="examples-section">
+        <div className="buttons-wrapper">
+          <ExamplePopup />
+          <ExampleSlider />
+          <ExampleSidetab />
+          <ExamplePopover />
+        </div>
+      </div>
+      <br />
+      <hr />
+      <br />
       <h2>Widget Example</h2>
       <br />
       <div className="examples-section">
         <ExampleWidget />
-      </div>
-      <br />
-      <hr />
-      <br />
-      <h2>Popup Example</h2>
-      <br />
-      <div className="examples-section">
-        <ExamplePopup />
-      </div>
-      <br />
-      <hr />
-      <br />
-      <h2>Slider Example</h2>
-      <br />
-      <div className="examples-section">
-        <ExampleSlider />
       </div>
     </div>
   </div>

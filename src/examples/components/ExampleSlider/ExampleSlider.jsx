@@ -3,8 +3,8 @@ import { Slider } from '../../../components';
 
 const ExampleSlider = () => (
   <div className="example-slider">
-    <Slider id="moe6aa" type="slider">
-      <button className="btn">Click to open the slider!</button>
+    <Slider id="njdbt5">
+      <button className="btn">Open Slider</button>
     </Slider>
   </div>
 );

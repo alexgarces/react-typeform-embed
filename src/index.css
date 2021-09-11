@@ -33,6 +33,7 @@ h1 {
   background: #262627;
   color: #fff;
   padding: 10px 20px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -51,4 +52,12 @@ hr {
 .examples-section {
   display: block;
   position: relative;
+}
+
+.buttons-wrapper {
+  display: flex;
+}
+
+.buttons-wrapper > div {
+  margin-right: 20px;
 }

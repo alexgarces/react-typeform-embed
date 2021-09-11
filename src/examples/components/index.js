@@ -1,5 +1,7 @@
+import ExampleWidget from './ExampleWidget';
 import ExamplePopup from './ExamplePopup';
 import ExampleSlider from './ExampleSlider';
-import ExampleWidget from './ExampleWidget';
+import ExampleSidetab from './ExampleSidetab';
+import ExamplePopover from './ExamplePopover';
 
-export { ExamplePopup, ExampleSlider, ExampleWidget };
+export { ExampleWidget, ExamplePopup, ExampleSlider, ExampleSidetab, ExamplePopover };

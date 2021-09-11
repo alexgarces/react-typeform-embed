@@ -3,7 +3,7 @@ import { Widget } from '../../../components';
 
 const ExampleWidget = () => (
   <div className="example-widget">
-    <Widget popup={false} id="njdbt5" height={400} />
+    <Widget id="njdbt5" height={400} />
   </div>
 );
 

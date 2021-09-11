@@ -1,15 +1,8 @@
 import React from 'react';
 import { createPopup } from '@typeform/embed';
+import Modal from '../Modal';
 import '@typeform/embed/build/css/popup.css';
 
-const Popup = ({ id, className, style, children, ...options }) => {
-  const { toggle } = createPopup(id, options);
-
-  return (
-    <div role="none" className="react-typeform-embed" onClick={toggle} {...{ className, style }}>
-      {children}
-    </div>
-  );
-};
+const Popup = (props) => <Modal create={createPopup} {...props} />;
 
 export default Popup;
