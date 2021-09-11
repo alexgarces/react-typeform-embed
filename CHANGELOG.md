@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.0] - 2021-09-13
+
+### Added
+
+- Three new embed types: Slider, Sidetab and Popover
+
+### Changed
+
+- Update packages to last version ([@typeform/embed](https://www.npmjs.com/package/@typeform/embed) included)
+- Refactor code with last React standards (functional components, hooks, etc.)
+- Simplify API
+- Update documentation and examples
+
 ## [0.2.1] - 2019-07-26
 
 ### Added
@@ -15,7 +28,7 @@ All notable changes to this project will be documented in this file.
 
 - Eslint
 - Prettier
-- MIT license 
+- MIT license
 - Changelog
 
 ### Changed

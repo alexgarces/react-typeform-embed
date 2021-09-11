@@ -4,22 +4,81 @@ A React wrapper for [Typeform Embed SDK](https://developer.typeform.com/embed/).
 
 ## Usage
 
+First install the package
+
 ```bash
-npm install react-typeform-embed
+yarn add react-typeform-embed
 ```
+
+There are [five different embed types](https://developer.typeform.com/embed/vanilla/#embed-types) that you can import as components.
+
+- Widget
+- Popup
+- Slider
+- Sidetab
+- Popover
+
+You need to provide the **form id** as **id** prop.
+
+You can get the id from the public URL of your form:
+
+`https://form.typeform.com/to/<form-id>`
+
+Or from the admin panel URL:
+
+`https://admin.typeform.com/form/<form-id>`
+
+You can also use any other option (except `container`) and callback from [the official SDK](https://developer.typeform.com/embed/) passing them as props. Find more info here:
+
+- [Available Options](https://developer.typeform.com/embed/configuration/#available-options)
+- [Callback Functions](https://developer.typeform.com/embed/callbacks/)
+
+### Widget
+
+With the **widget embed type** you can embed your form inline, in a DOM element.
 
 ```js
 import React from 'react';
-import { ReactTypeformEmbed } from 'react-typeform-embed';
+import { Widget } from 'react-typeform-embed';
 
-class App extends React.Component {
+const App = () => {
   render() {
-    return <ReactTypeformEmbed url="https://demo.typeform.com/to/njdbt5" />;
+    return <Widget id="njdbt5" height={500} />;
   }
 }
 ```
 
-See the source for more examples.
+### Popup and Slider
+
+With the **popup and slider embed types** you can embed the form in a modal. You need to pass as children the element/s that will open the modal when clicked.
+
+```js
+import React from 'react';
+import { Popup /* or Slider */ } from 'react-typeform-embed';
+
+const App = () => {
+  return (
+    <Popup id="njdbt5" size={400}>
+      <button>Open Popup</button>
+    </Popup>
+  );
+}
+```
+
+### Sidetab and Popover
+
+These other **modal embed types** work exactly as the Popup component but, since them are already visible and clickable, passing children element/s is optional.
+
+```js
+import React from 'react';
+import { Sidetab /* or Popover */ } from 'react-typeform-embed';
+
+const App = () => {
+  return <Sidetab id="njdbt5">
+}
+```
+
+[See the source](https://github.com/alexgarces/react-typeform-embed/tree/master/src/examples) for more examples.
 
 ## Demo
 
@@ -28,37 +87,10 @@ See a [live demo](https://alexgarces.github.io/react-typeform-embed/), or run:
 ```bash
 git clone https://github.com/alexgarces/react-typeform-embed
 cd react-typeform-embed
-npm install
-npm start
+yarn
+yarn start
 open http://localhost:3000
 ```
-
-## Props
-
-Most props are based on the official parameters from [Typeform Embed SDK](https://developer.typeform.com/embed/)
-
-Prop | Description | Default
----- | ----------- | -------
-`url` | The url of the Typeform form to display | `""`
-`style` | Additional styles for the component | `{}`
-`popup` | `true` if you want to display the form in **popup** mode.<br />By default it is displayed in **widget** mode | `false`
-`hideHeaders` | `true` if you want to hide the **header** that displays for question groups and long questions that require scrolling. Otherwise, `false` | `false`
-`hideFooter` | `true` if you want to hide the **footer** that displays a progress bar and navigation buttons. Otherwise, `false`. | `false`
-`opacity` | Background opacity. Valid values include any integer between `0` (completely transparent) and `100` (completely opaque). Note that this isn't the same as the CSS opacity scale (0-1).<br />*Widget mode option* | `100`
-`buttonText` | Text to display in the "Start" button. Displayed only on touch-screen and mobile devices.<br />*Widget mode option* | `"Start"`
-`mode` | Identifies how the popup should behave. Valid values are `popup` (full-screen popup), `drawer_left` (popup slides in from the left), and `drawer_right` (popup slides in from the right).<br />*Popup mode option* | `"popup"`
-`autoOpen` | `true` if the typeform should open automatically when the page loads. Otherwise, `false`.<br />*Popup mode option* | `false`
-`autoClose` | **PRO+ accounts only**. Time until the embedded typeform should automatically close after a respondent clicks the Submit button. Your typeform will automatically close after the time you specify, so respondents won’t have to manually close your typeform popup. In milliseconds.<br />*Popup mode option* | N/A
-`onSubmit` | **PRO+ accounts only**. Callback event that will execute immediately after a respondent successfully submits the typeform. <br /> | N/A
-
-## Popup Mode Instance Methods
-
-Use `ref` to call instance methods. See [the source](https://github.com/alexgarces/react-typeform-embed/blob/master/src/examples/ExamplePopup.js) for an example of this.
-
-Method | Description
----- | -----------
-`typeform.open()` | Open the popup window
-`typeform.close()` | Close the popup window
 
 ### License
 

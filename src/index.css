@@ -33,6 +33,8 @@ h1 {
   background: #262627;
   color: #fff;
   padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 p {
@@ -43,16 +45,19 @@ hr {
   border-top: 1px solid #262627;
 }
 
-.Examples {
+.examples {
   padding: 60px 0 80px;
 }
 
-.Examples__widget-section,
-.Examples__popup-section {
+.examples-section {
   display: block;
   position: relative;
 }
 
-.Examples__widget-section {
-  height: 400px;
+.buttons-wrapper {
+  display: flex;
+}
+
+.buttons-wrapper > div {
+  margin-right: 20px;
 }
