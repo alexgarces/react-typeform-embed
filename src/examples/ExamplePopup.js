@@ -17,12 +17,12 @@ class ExamplePopup extends React.Component {
         <ReactTypeformEmbed
           popup
           autoOpen={false}
-          url="https://demo.typeform.com/to/njdbt5"
+          url="https://showroom.typeform.com/to/njdbt5"
           hideHeaders
           hideFooter
           buttonText="Go!"
           style={{ top: 100 }}
-          ref={tf => {
+          ref={(tf) => {
             this.typeformEmbed = tf;
           }}
         />

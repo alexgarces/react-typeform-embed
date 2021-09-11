@@ -1,7 +1,7 @@
 import React from 'react';
 
 import ExampleWidget from './ExampleWidget';
-import ExamplePopup from './ExamplePopup';
+// import ExamplePopup from './ExamplePopup';
 
 class Examples extends React.Component {
   constructor(props) {
@@ -45,9 +45,7 @@ class Examples extends React.Component {
           <br />
           <h2>Popup Mode Example</h2>
           <br />
-          <div className="Examples__popup-section">
-            <ExamplePopup />
-          </div>
+          <div className="Examples__popup-section">{/* <ExamplePopup /> */}</div>
         </div>
       </div>
     );

@@ -4,7 +4,7 @@ import { ReactTypeformEmbed } from '../components';
 const ExampleWidget = () => {
   return (
     <div className="ExampleWidget">
-      <ReactTypeformEmbed popup={false} url="https://demo.typeform.com/to/njdbt5" />
+      <ReactTypeformEmbed popup={false} id="njdbt5" styles={{ height: 400 }} />
     </div>
   );
 };
