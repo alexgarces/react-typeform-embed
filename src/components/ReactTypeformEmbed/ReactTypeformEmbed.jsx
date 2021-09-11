@@ -1,55 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import '@typeform/embed/build/css/widget.css';
 import { Widget } from './components';
 
-class ReactTypeformEmbed extends Component {
-  componentDidMount() {
-    // const {
-    // id,
-    // hideHeaders,
-    // hideFooter,
-    // opacity,
-    // buttonText,
-    // popup,
-    // mode,
-    // autoOpen,
-    // autoClose,
-    // onSubmit,
-    // } = this.props;
-    // const options = {
-    //   hideHeaders,
-    //   hideFooter,
-    //   opacity,
-    //   buttonText,
-    //   mode,
-    //   autoOpen,
-    //   autoClose,
-    //   onSubmit,
-    // };
-    // Popup Mode
-    // if (popup) {
-    //   // Load Typeform embed popup
-    //   this.typeform = typeformEmbed.makePopup(url, options);
-    //   // Widget Mode (default)
-    // } else {
-    // Load Typeform embed widget
-    // typeformEmbed.makeWidget(elm, url, options);
-    // }
-  }
+const Component = {};
 
-  render() {
-    // const style = { ...styleDefault, ...this.props.style };
-    const UI = Widget;
-    const { id, style } = this.props;
+const ReactTypeformEmbed = ({ id, type, style }) => {
+  const UI = Component[type] || Widget;
 
-    return <UI className="ReactTypeformEmbed" {...{ id, style }} />;
-  }
-}
+  return <UI className="ReactTypeformEmbed" {...{ id, style }} />;
+};
 
 ReactTypeformEmbed.propTypes = {
   style: PropTypes.object,
   id: PropTypes.string.isRequired,
+  type: PropTypes.string,
   // popup: PropTypes.bool,
   // hideHeaders: PropTypes.bool,
   // hideFooter: PropTypes.bool,
@@ -68,6 +33,7 @@ ReactTypeformEmbed.propTypes = {
 // Default values taken from official Typeform docs
 // https://developer.typeform.com/embed/modes/
 ReactTypeformEmbed.defaultProps = {
+  type: 'widget',
   style: {},
   // popup: false,
   // hideHeaders: false,
