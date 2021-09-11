@@ -1,13 +1,23 @@
 {
-  "main.css": "/react-typeform-embed/static/css/main.3fed21f5.chunk.css",
-  "main.js": "/react-typeform-embed/static/js/main.ea7714d3.chunk.js",
-  "main.js.map": "/react-typeform-embed/static/js/main.ea7714d3.chunk.js.map",
-  "runtime~main.js": "/react-typeform-embed/static/js/runtime~main.beeea3e5.js",
-  "runtime~main.js.map": "/react-typeform-embed/static/js/runtime~main.beeea3e5.js.map",
-  "static/js/2.6292ea0d.chunk.js": "/react-typeform-embed/static/js/2.6292ea0d.chunk.js",
-  "static/js/2.6292ea0d.chunk.js.map": "/react-typeform-embed/static/js/2.6292ea0d.chunk.js.map",
-  "index.html": "/react-typeform-embed/index.html",
-  "precache-manifest.e09fcd5bc00e93a9f1405c718ac90129.js": "/react-typeform-embed/precache-manifest.e09fcd5bc00e93a9f1405c718ac90129.js",
-  "service-worker.js": "/react-typeform-embed/service-worker.js",
-  "static/css/main.3fed21f5.chunk.css.map": "/react-typeform-embed/static/css/main.3fed21f5.chunk.css.map"
+  "files": {
+    "main.css": "/react-typeform-embed/static/css/main.a55ae3f4.chunk.css",
+    "main.js": "/react-typeform-embed/static/js/main.9c1ca2b0.chunk.js",
+    "main.js.map": "/react-typeform-embed/static/js/main.9c1ca2b0.chunk.js.map",
+    "runtime-main.js": "/react-typeform-embed/static/js/runtime-main.c2a52f9c.js",
+    "runtime-main.js.map": "/react-typeform-embed/static/js/runtime-main.c2a52f9c.js.map",
+    "static/css/2.3b5f1e20.chunk.css": "/react-typeform-embed/static/css/2.3b5f1e20.chunk.css",
+    "static/js/2.dea1d3ba.chunk.js": "/react-typeform-embed/static/js/2.dea1d3ba.chunk.js",
+    "static/js/2.dea1d3ba.chunk.js.map": "/react-typeform-embed/static/js/2.dea1d3ba.chunk.js.map",
+    "index.html": "/react-typeform-embed/index.html",
+    "static/css/2.3b5f1e20.chunk.css.map": "/react-typeform-embed/static/css/2.3b5f1e20.chunk.css.map",
+    "static/css/main.a55ae3f4.chunk.css.map": "/react-typeform-embed/static/css/main.a55ae3f4.chunk.css.map",
+    "static/js/2.dea1d3ba.chunk.js.LICENSE.txt": "/react-typeform-embed/static/js/2.dea1d3ba.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c2a52f9c.js",
+    "static/css/2.3b5f1e20.chunk.css",
+    "static/js/2.dea1d3ba.chunk.js",
+    "static/css/main.a55ae3f4.chunk.css",
+    "static/js/main.9c1ca2b0.chunk.js"
+  ]
 }
