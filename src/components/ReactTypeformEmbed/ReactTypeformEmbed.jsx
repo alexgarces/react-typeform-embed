@@ -1,51 +1,36 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '@typeform/embed/build/css/widget.css';
-import { Widget } from './components';
+import { Widget, Popup } from './components';
 
-const Component = {};
+const Components = {
+  widget: Widget,
+  popup: Popup,
+};
 
-const ReactTypeformEmbed = ({ id, type, style }) => {
-  const UI = Component[type] || Widget;
+const ReactTypeformEmbed = ({
+  id = '',
+  type = 'widget',
+  children,
+  style,
 
-  return <UI className="ReactTypeformEmbed" {...{ id, style }} />;
+  // See the options and default values at the official Typeform docs
+  // https://github.com/Typeform/embed/tree/main/packages/embed#options
+  ...options
+}) => {
+  const Component = Components[type] || Widget;
+
+  return (
+    <Component className="react-typeform-embed" {...{ id, style, options }}>
+      {children}
+    </Component>
+  );
 };
 
 ReactTypeformEmbed.propTypes = {
-  style: PropTypes.object,
-  id: PropTypes.string.isRequired,
   type: PropTypes.string,
-  // popup: PropTypes.bool,
-  // hideHeaders: PropTypes.bool,
-  // hideFooter: PropTypes.bool,
-
-  // Widget options
-  // opacity: PropTypes.number,
-  // buttonText: PropTypes.string,
-
-  // Popup options
-  // mode: PropTypes.string,
-  // autoOpen: PropTypes.bool,
-  // autoClose: PropTypes.number,
-  // onSubmit: PropTypes.func,
-};
-
-// Default values taken from official Typeform docs
-// https://developer.typeform.com/embed/modes/
-ReactTypeformEmbed.defaultProps = {
-  type: 'widget',
-  style: {},
-  // popup: false,
-  // hideHeaders: false,
-  // hideFooter: false,
-  // onSubmit: () => {},
-  // Widget options
-  // opacity: 100,
-  // buttonText: 'Start',
-  // Popup options
-  // mode: 'popup', // options: "popup", "drawer_left", "drawer_right"
-  // autoOpen: false,
-  // autoClose: 5,
+  id: PropTypes.string.isRequired,
+  style: PropTypes.object,
+  options: PropTypes.object,
 };
 
 export default ReactTypeformEmbed;

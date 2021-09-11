@@ -3,25 +3,21 @@ import PropTypes from 'prop-types';
 import { createWidget } from '@typeform/embed';
 import '@typeform/embed/build/css/widget.css';
 
-const Widget = ({ id, style }) => {
+const Widget = ({ id, options, className, style }) => {
   const typeformElm = useRef(null);
 
   useEffect(() => {
-    if (!typeformElm?.current) return;
-
-    createWidget(id, { container: typeformElm.current });
+    createWidget(id, { container: typeformElm.current, ...options });
   }, [id]);
 
-  return <div ref={typeformElm} {...{ style }} />;
+  return <div ref={typeformElm} {...{ className, style }} />;
 };
 
 Widget.propTypes = {
-  style: PropTypes.object,
   id: PropTypes.string.isRequired,
-};
-
-Widget.defaultProps = {
-  style: {},
+  options: PropTypes.object.isRequired,
+  className: PropTypes.string.isRequired,
+  style: PropTypes.object,
 };
 
 export default Widget;
