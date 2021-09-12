@@ -4,7 +4,7 @@ A React wrapper for [Typeform Embed SDK](https://developer.typeform.com/embed/).
 
 [See a live demo](https://alexgarces.github.io/react-typeform-embed/).
 
-## Upgrading from v.0.3
+## Upgrading from [v.0.3](https://github.com/alexgarces/react-typeform-embed/tree/v0.3)
 
 **Important:** Please be aware that if you are updating this package from a version previous to `v.1.0` you will need to apply changes in your implementation.
 
