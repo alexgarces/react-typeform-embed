@@ -1,6 +1,6 @@
 {
   "name": "react-typeform-embed",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./lib/index.js",
   "engines": {
     "node": ">=4.0.0"
@@ -43,6 +43,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "cpx": "^1.5.0",
