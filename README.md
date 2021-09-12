@@ -60,7 +60,7 @@ import { Popup /* or Slider */ } from 'react-typeform-embed';
 
 const App = () => {
   return (
-    <Popup id="njdbt5" size={400}>
+    <Popup id="njdbt5" size={80}>
       <button>Open Popup</button>
     </Popup>
   );
