@@ -2,7 +2,7 @@
 
 A React wrapper for [Typeform Embed SDK](https://developer.typeform.com/embed/).
 
-[Live demo](https://alexgarces.github.io/react-typeform-embed/).
+[See a live demo](https://alexgarces.github.io/react-typeform-embed/).
 
 ## Usage
 
@@ -69,7 +69,7 @@ const App = () => {
 
 ### Sidetab and Popover
 
-These other **modal embed types** work exactly as the Popup component but, since them are already visible and clickable, passing children element/s is optional.
+These other **modal embed types** work exactly as the Popup component but, since they are already visible and clickable, passing children element/s is optional.
 
 ```js
 import React from 'react';
