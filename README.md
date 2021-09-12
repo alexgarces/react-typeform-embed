@@ -94,6 +94,11 @@ yarn start
 open http://localhost:3000
 ```
 
+## Alternatives
+
+- Official [Typeform React Embed Library](https://github.com/Typeform/embed/tree/main/packages/embed-react)
+
+
 ### License
 
 Code released under the [MIT license](LICENSE.txt).
