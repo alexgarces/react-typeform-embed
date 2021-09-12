@@ -2,6 +2,8 @@
 
 A React wrapper for [Typeform Embed SDK](https://developer.typeform.com/embed/).
 
+[live demo](https://alexgarces.github.io/react-typeform-embed/).
+
 ## Usage
 
 First install the package
