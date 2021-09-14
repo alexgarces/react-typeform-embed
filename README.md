@@ -24,27 +24,11 @@ There are [five different embed types](https://developer.typeform.com/embed/vani
 - Sidetab
 - Popover
 
-You need to provide the **form id** as **id** prop.
-
-You can get the id from the public URL of your form:
-
-`https://form.typeform.com/to/<form-id>`
-
-Or from the admin panel URL:
-
-`https://admin.typeform.com/form/<form-id>`
-
-You can also use any other option and callback (except `container`) from [the official SDK](https://developer.typeform.com/embed/) passing them as props. Find more info here:
-
-- [Available Options](https://developer.typeform.com/embed/configuration/#available-options)
-- [Callback Functions](https://developer.typeform.com/embed/callbacks/)
-
 ### Widget
 
 With the **widget embed type** you can embed your form inline, in a DOM element.
 
 ```js
-import React from 'react';
 import { Widget } from 'react-typeform-embed';
 
 const App = () => {
@@ -59,7 +43,6 @@ const App = () => {
 With the **popup and slider embed types** you can embed the form in a modal. You need to pass as children the element/s that will open the modal when clicked.
 
 ```js
-import React from 'react';
 import { Popup /* or Slider */ } from 'react-typeform-embed';
 
 const App = () => {
@@ -76,7 +59,6 @@ const App = () => {
 These other **modal embed types** work exactly as the Popup component but, since they are already visible and clickable, passing children element/s is optional.
 
 ```js
-import React from 'react';
 import { Sidetab /* or Popover */ } from 'react-typeform-embed';
 
 const App = () => {
@@ -85,6 +67,34 @@ const App = () => {
 ```
 
 [See the source](https://github.com/alexgarces/react-typeform-embed/tree/master/src/examples) for more examples.
+
+## Configuration
+
+You need to provide the **form id** as **id** prop.
+
+You can get the id from the public URL of your form URL (`https://form.typeform.com/to/<form-id>`) or admin panel URL (`https://admin.typeform.com/form/<form-id>`).
+
+You can also use any other option and callback from [the official SDK](https://developer.typeform.com/embed/) passing them as props. Find more info here:
+
+- [Available Options](https://developer.typeform.com/embed/configuration/#available-options)
+- [Callback Functions](https://developer.typeform.com/embed/callbacks/)
+
+```js
+<Widget
+  id="your-form-id"
+  height={400}
+  opacity={80}
+  hidden={{
+    userId: 'hidden-user-id'
+  }}
+  onSubmit={() => {
+    console.log('Form submitted!')
+  }}
+  hideHeaders
+  disableAutoFocus
+  enableSandbox
+/>
+```
 
 ## Demo
 
