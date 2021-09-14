@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/react-typeform-embed/static/css/main.a55ae3f4.chunk.css",
-    "main.js": "/react-typeform-embed/static/js/main.9c1ca2b0.chunk.js",
-    "main.js.map": "/react-typeform-embed/static/js/main.9c1ca2b0.chunk.js.map",
-    "runtime-main.js": "/react-typeform-embed/static/js/runtime-main.c2a52f9c.js",
-    "runtime-main.js.map": "/react-typeform-embed/static/js/runtime-main.c2a52f9c.js.map",
-    "static/css/2.3b5f1e20.chunk.css": "/react-typeform-embed/static/css/2.3b5f1e20.chunk.css",
-    "static/js/2.dea1d3ba.chunk.js": "/react-typeform-embed/static/js/2.dea1d3ba.chunk.js",
-    "static/js/2.dea1d3ba.chunk.js.map": "/react-typeform-embed/static/js/2.dea1d3ba.chunk.js.map",
-    "index.html": "/react-typeform-embed/index.html",
-    "static/css/2.3b5f1e20.chunk.css.map": "/react-typeform-embed/static/css/2.3b5f1e20.chunk.css.map",
-    "static/css/main.a55ae3f4.chunk.css.map": "/react-typeform-embed/static/css/main.a55ae3f4.chunk.css.map",
-    "static/js/2.dea1d3ba.chunk.js.LICENSE.txt": "/react-typeform-embed/static/js/2.dea1d3ba.chunk.js.LICENSE.txt"
+    "main.css": "/alexgarces/react-typeform-embed/static/css/main.a55ae3f4.chunk.css",
+    "main.js": "/alexgarces/react-typeform-embed/static/js/main.e460e677.chunk.js",
+    "main.js.map": "/alexgarces/react-typeform-embed/static/js/main.e460e677.chunk.js.map",
+    "runtime-main.js": "/alexgarces/react-typeform-embed/static/js/runtime-main.e4d66717.js",
+    "runtime-main.js.map": "/alexgarces/react-typeform-embed/static/js/runtime-main.e4d66717.js.map",
+    "static/css/2.3b5f1e20.chunk.css": "/alexgarces/react-typeform-embed/static/css/2.3b5f1e20.chunk.css",
+    "static/js/2.dea1d3ba.chunk.js": "/alexgarces/react-typeform-embed/static/js/2.dea1d3ba.chunk.js",
+    "static/js/2.dea1d3ba.chunk.js.map": "/alexgarces/react-typeform-embed/static/js/2.dea1d3ba.chunk.js.map",
+    "index.html": "/alexgarces/react-typeform-embed/index.html",
+    "static/css/2.3b5f1e20.chunk.css.map": "/alexgarces/react-typeform-embed/static/css/2.3b5f1e20.chunk.css.map",
+    "static/css/main.a55ae3f4.chunk.css.map": "/alexgarces/react-typeform-embed/static/css/main.a55ae3f4.chunk.css.map",
+    "static/js/2.dea1d3ba.chunk.js.LICENSE.txt": "/alexgarces/react-typeform-embed/static/js/2.dea1d3ba.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c2a52f9c.js",
+    "static/js/runtime-main.e4d66717.js",
     "static/css/2.3b5f1e20.chunk.css",
     "static/js/2.dea1d3ba.chunk.js",
     "static/css/main.a55ae3f4.chunk.css",
-    "static/js/main.9c1ca2b0.chunk.js"
+    "static/js/main.e460e677.chunk.js"
   ]
 }
