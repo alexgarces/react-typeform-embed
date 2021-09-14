@@ -1,6 +1,6 @@
 {
   "name": "react-typeform-embed",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "./lib/index.js",
   "engines": {
     "node": ">=4.0.0"
@@ -27,7 +27,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
-  "homepage": "https://github.com/alexgarces/react-typeform-embed/",
+  "homepage": "http://alexgarces.github.io/react-typeform-embed/",
   "scripts": {
     "start": "react-scripts start",
     "build:docs": "react-scripts build",
