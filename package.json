@@ -82,5 +82,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:https://github.com/alexgarces/react-typeform-embed"
+  }
 }
