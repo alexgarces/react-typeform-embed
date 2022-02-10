@@ -7,8 +7,8 @@
   },
   "author": {
     "name": "Alex Garces",
-    "email": "info@alexgarces.com",
-    "url": "https://alexgarces.com"
+    "email": "garces.alex@gmail.com",
+    "url": "https://twitter.com/alexgrcs"
   },
   "files": [
     "lib"
@@ -37,12 +37,13 @@
     "eject": "react-scripts eject",
     "predeploy:docs": "npm run build:docs",
     "deploy:docs": "gh-pages -d build",
-    "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore test.js",
+    "build:commonjs": "cross-env NODE_ENV=production babel --plugins @babel/plugin-transform-modules-commonjs ./src/components --out-dir ./lib --ignore test.js",
     "prepare": "npm run build:lib"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.0",
     "@babel/core": "^7.17.2",
+    "@babel/plugin-transform-modules-commonjs": "^7.16.8",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
