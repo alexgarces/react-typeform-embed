@@ -6,9 +6,10 @@ body {
   color: #262627;
 }
 
-a {
+a:not([class^='tf-v1']) {
   color: #262627;
   border-bottom: 1px solid #262627;
+  text-decoration: none;
 }
 
 a:hover {
