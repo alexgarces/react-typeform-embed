@@ -1,23 +1,13 @@
 {
   "files": {
-    "main.css": "/react-typeform-embed/static/css/main.a55ae3f4.chunk.css",
-    "main.js": "/react-typeform-embed/static/js/main.e460e677.chunk.js",
-    "main.js.map": "/react-typeform-embed/static/js/main.e460e677.chunk.js.map",
-    "runtime-main.js": "/react-typeform-embed/static/js/runtime-main.c2a52f9c.js",
-    "runtime-main.js.map": "/react-typeform-embed/static/js/runtime-main.c2a52f9c.js.map",
-    "static/css/2.3b5f1e20.chunk.css": "/react-typeform-embed/static/css/2.3b5f1e20.chunk.css",
-    "static/js/2.dea1d3ba.chunk.js": "/react-typeform-embed/static/js/2.dea1d3ba.chunk.js",
-    "static/js/2.dea1d3ba.chunk.js.map": "/react-typeform-embed/static/js/2.dea1d3ba.chunk.js.map",
+    "main.css": "/react-typeform-embed/static/css/main.694f9cc9.css",
+    "main.js": "/react-typeform-embed/static/js/main.48a779fd.js",
     "index.html": "/react-typeform-embed/index.html",
-    "static/css/2.3b5f1e20.chunk.css.map": "/react-typeform-embed/static/css/2.3b5f1e20.chunk.css.map",
-    "static/css/main.a55ae3f4.chunk.css.map": "/react-typeform-embed/static/css/main.a55ae3f4.chunk.css.map",
-    "static/js/2.dea1d3ba.chunk.js.LICENSE.txt": "/react-typeform-embed/static/js/2.dea1d3ba.chunk.js.LICENSE.txt"
+    "main.694f9cc9.css.map": "/react-typeform-embed/static/css/main.694f9cc9.css.map",
+    "main.48a779fd.js.map": "/react-typeform-embed/static/js/main.48a779fd.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.c2a52f9c.js",
-    "static/css/2.3b5f1e20.chunk.css",
-    "static/js/2.dea1d3ba.chunk.js",
-    "static/css/main.a55ae3f4.chunk.css",
-    "static/js/main.e460e677.chunk.js"
+    "static/css/main.694f9cc9.css",
+    "static/js/main.48a779fd.js"
   ]
 }
