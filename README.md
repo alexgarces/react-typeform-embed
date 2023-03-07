@@ -113,6 +113,10 @@ open http://localhost:3000
 - Official [Typeform React Embed Library](https://github.com/Typeform/embed/tree/main/packages/embed-react)
 
 
+## React Native version
+
+If you're looking for React Native version of the same thing, you can find it over [here](https://github.com/ubdi/react-native-typeform-embed).
+
 ### License
 
 Code released under the [MIT license](LICENSE.txt).
