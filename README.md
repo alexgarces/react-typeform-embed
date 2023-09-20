@@ -1,3 +1,13 @@
+## 🚫 Unmaintained Repository
+
+**Please Note:** This repository is no longer maintained.
+
+For the latest and actively maintained version, please visit the official repository:
+
+[Typeform React Embed Library](https://github.com/Typeform/embed/tree/main/packages/embed-react)
+
+Thank you for your support and understanding.
+
 # React Typeform Embed
 
 A React wrapper for [Typeform Embed SDK](https://developer.typeform.com/embed/).
